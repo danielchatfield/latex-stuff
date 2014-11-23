@@ -55,6 +55,7 @@
 
 %% Load additional packages
 \RequirePackage[utf8]{inputenc} % converts unicode into latex
+\RequirePackage[margin=3cm]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 
