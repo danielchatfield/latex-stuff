@@ -8,12 +8,14 @@
 \newtoggle{ShowSolutions}
 \newtoggle{InQuestions}
 \newtoggle{InParts}
+\newtoggle{InSubParts}
 
 
 %% Keep track of which environments we are in (used by setnumber to determine
 %% which counter to set)
 \AtBeginEnvironment{questions}{\toggletrue{InQuestions}}
 \AtBeginEnvironment{parts}{\toggletrue{InParts}}
+\AtBeginEnvironment{subparts}{\toggletrue{InSubParts}}
 
 %% By default show solutions
 \toggletrue{ShowSolutions}
@@ -66,15 +68,20 @@
 %% Command to set question
 \newcommand{\SetQuestionNumber}[1]{
     % Check if in part environment
-    \iftoggle{InParts}{
-        \setcounter{partno}{#1}
-        \addtocounter{partno}{-1}
+    \iftoggle{InSubParts}{
+        \setcounter{subpart}{#1}
+        \addtocounter{subpart}{-1}
     } {
-        \iftoggle{InQuestions}{
-            \setcounter{question}{#1}
-            \addtocounter{question}{-1}
+        \iftoggle{InParts}{
+            \setcounter{partno}{#1}
+            \addtocounter{partno}{-1}
         } {
-            \ClassError{supervision}{Cannot use '\\setquestionno' outside questions environment}
+            \iftoggle{InQuestions}{
+                \setcounter{question}{#1}
+                \addtocounter{question}{-1}
+            } {
+                \ClassError{supervision}{Cannot use '\\setquestionno' outside questions environment}
+            }
         }
     }
 
