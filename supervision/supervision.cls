@@ -64,6 +64,8 @@
 
 %% Setup document
 
+% Remove 'solution' from solution box
+\renewcommand{\solutiontitle}{\noindent\textbf{Answer:}\par\noindent}
 
 
 %% Command to set question
