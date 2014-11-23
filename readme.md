@@ -11,7 +11,7 @@ work.
 ### Features
 
  - Supports unicode characters in the source (automatically converts them into appropriate latex)
- - By default
+ - By default shows the answers
 
 ### Options
  - **hidesolutions** - Hides the solutions from the compiled PDF
@@ -20,4 +20,4 @@ work.
 
 #### `\SetQuestionNumber{3}`
 
-Sets the next question to the specified value.
+Sets the next question (or part) number to the specified value.
