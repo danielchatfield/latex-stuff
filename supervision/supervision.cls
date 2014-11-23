@@ -6,9 +6,16 @@
                           % the top as we use several commands
 
 \newtoggle{ShowSolutions}
+
 \newtoggle{InQuestions}
 \newtoggle{InParts}
 \newtoggle{InSubParts}
+
+\newtoggle{CourseSet}
+\newtoggle{TopicsSet}
+\newtoggle{SupervisionSet}
+\newtoggle{AuthorSet}
+
 
 %% By default show solutions
 \toggletrue{ShowSolutions}
@@ -63,7 +70,6 @@
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 \RequirePackage{parskip} % Set spacing between paragraphs
-
 \RequirePackage{titling}
 
 %% Setup document
@@ -97,8 +103,48 @@
             }
         }
     }
-
 }
+
+\newcommand{\@Course}{}
+\newcommand{\Course}[1]{
+    \ifstrempty{#1}{
+        \togglefalse{CourseSet}
+    } {
+        \toggletrue{CourseSet}
+    }
+    \renewcommand{\@Course}{#1}
+}
+
+\newcommand{\@Topics}{}
+\newcommand{\Topics}[1]{
+    \ifstrempty{#1}{
+        \togglefalse{TopicsSet}
+    } {
+        \toggletrue{TopicsSet}
+    }
+    \renewcommand{\@Topics}{#1}
+}
+
+\newcommand{\@Supervision}{}
+\newcommand{\Supervision}[1]{
+    \ifstrempty{#1}{
+        \togglefalse{SupervisionSet}
+    } {
+        \toggletrue{SupervisionSet}
+    }
+    \renewcommand{\@Supervision}{#1}
+}
+
+\title{\@Topics}
+
+\AtBeginDocument{
+    \renewcommand{\Course}{\@Course}
+    \renewcommand{\Topics}{\@Topics}
+    \renewcommand{\Supervision}{\@Supervision}
+
+    \maketitle
+}
+
 
 
 \endinput
