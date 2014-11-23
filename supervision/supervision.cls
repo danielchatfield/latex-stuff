@@ -62,8 +62,15 @@
 \RequirePackage{xcolor}
 \RequirePackage{parskip} % Set spacing between paragraphs
 
+\RequirePackage{titling}
 
 %% Setup document
+\pagestyle{headandfoot}
+\runningheader{\theauthor}{\Course \ Supervision \Supervision}{\thedate}
+\firstpageheader{}{\Course}{}
+\firstpagefooter{}{\thepage}{}
+\runningfooter{}{\thepage}{}
+\date{\today}
 
 % Remove 'solution' from solution box
 \renewcommand{\solutiontitle}{\noindent\textbf{Answer:}\par\noindent}
