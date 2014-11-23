@@ -62,6 +62,7 @@
 \RequirePackage[margin=3cm]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
+\RequirePackage{parskip} % Set spacing between paragraphs
 
 
 %% Setup document
