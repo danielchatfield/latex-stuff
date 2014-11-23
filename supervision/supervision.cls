@@ -17,8 +17,6 @@
 \AtBeginEnvironment{parts}{\toggletrue{InParts}}
 \AtBeginEnvironment{subparts}{\toggletrue{InSubParts}}
 
-%% By default show solutions
-\toggletrue{ShowSolutions}
 
 %% Our custom options
 \DeclareOption{hide_solutions}{
