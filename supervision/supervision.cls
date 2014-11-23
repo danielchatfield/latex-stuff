@@ -53,14 +53,16 @@
     \PassOptionsToClass{answers}{exam}
 }
 
+
+%% Load exam class
+\LoadClass[a4paper,12pt]{exam}
+
 %% Load additional packages
 \RequirePackage[utf8]{inputenc} % converts unicode into latex
 \RequirePackage[margin=3cm]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 
-%% Load exam class
-\LoadClass[a4paper]{exam}
 
 %% Setup document
 
