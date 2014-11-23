@@ -10,6 +10,8 @@
 \newtoggle{InParts}
 \newtoggle{InSubParts}
 
+%% By default show solutions
+\toggletrue{ShowSolutions}
 
 %% Keep track of which environments we are in (used by setnumber to determine
 %% which counter to set)
