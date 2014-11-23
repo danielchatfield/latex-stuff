@@ -11,7 +11,7 @@ work.
 ### Features
 
  - Supports unicode characters in the source (automatically converts them into appropriate latex)
- - By default shows the answers
+ - By default answers are shown
 
 ### Options
  - **hidesolutions** - Hides the solutions from the compiled PDF
