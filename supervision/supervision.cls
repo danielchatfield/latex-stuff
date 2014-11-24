@@ -136,12 +136,20 @@
     \renewcommand{\@Supervision}{#1}
 }
 
-\title{\@Topics}
-
 \AtBeginDocument{
     \renewcommand{\Course}{\@Course}
     \renewcommand{\Topics}{\@Topics}
     \renewcommand{\Supervision}{\@Supervision}
+
+    \iftoggle{TopicsSet} {
+        \title{\@Topics}
+    } {
+        \iftoggle{SupervisionSet} {
+            \title{\@Course \ Supervision \@Supervision}
+        }{
+            \title{\@Course}
+        }
+    }
 
     \maketitle
 }
