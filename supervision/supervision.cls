@@ -71,6 +71,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{parskip} % Set spacing between paragraphs
 \RequirePackage{titling}
+\RequirePackage{mathtools}
 
 %% Setup document
 \pagestyle{headandfoot}
