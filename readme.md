@@ -12,6 +12,8 @@ work.
 
  - Supports unicode characters in the source (automatically converts them into appropriate latex)
  - By default answers are shown
+ - Sensible header
+ - Intelligent default title
 
 ### Options
  - **hidesolutions** - Hides the solutions from the compiled PDF
@@ -21,3 +23,8 @@ work.
 #### `\SetQuestionNumber{3}`
 
 Sets the next question (or part) number to the specified value.
+
+### \Topics{This & That}`
+
+Sets the work topics (optional) - if they are set then the title of the work
+will be the topics, if it is not then the title will be the course name.
