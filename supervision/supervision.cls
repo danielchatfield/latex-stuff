@@ -74,6 +74,7 @@
 \RequirePackage{mathtools}
 \RequirePackage{amssymb}
 \RequirePackage{gensymb}
+\RequirePackage{hyperref}
 
 %% Setup document
 \pagestyle{headandfoot}
