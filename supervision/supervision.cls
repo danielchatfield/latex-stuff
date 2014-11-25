@@ -82,6 +82,7 @@
 \firstpageheader{}{\Course}{}
 \firstpagefooter{}{\thepage}{}
 \runningfooter{}{\thepage}{}
+\graphicspath{ {./img/} }
 \date{\today}
 
 % Remove 'solution' from solution box
