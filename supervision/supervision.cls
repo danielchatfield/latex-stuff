@@ -72,6 +72,8 @@
 \RequirePackage{parskip} % Set spacing between paragraphs
 \RequirePackage{titling}
 \RequirePackage{mathtools}
+\RequirePackage{amssymb}
+\RequirePackage{gensymb}
 
 %% Setup document
 \pagestyle{headandfoot}
