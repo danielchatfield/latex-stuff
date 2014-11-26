@@ -75,6 +75,8 @@
 \RequirePackage{amssymb}
 \RequirePackage{gensymb}
 \RequirePackage{hyperref}
+\RequirePackage{listings}
+\RequirePackage{courier}
 
 %% Setup document
 \pagestyle{headandfoot}
@@ -82,6 +84,11 @@
 \firstpageheader{}{\Course}{}
 \firstpagefooter{}{\thepage}{}
 \runningfooter{}{\thepage}{}
+% Use Courier for source code listings
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true
+}
 \graphicspath{ {./img/} }
 \date{\today}
 
