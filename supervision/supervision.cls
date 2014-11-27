@@ -74,8 +74,9 @@
 \RequirePackage{amssymb}
 \RequirePackage{gensymb}
 \RequirePackage{hyperref}
-\RequirePackage{listings}
+\RequirePackage{listings} % Legacy source code
 \RequirePackage{courier}
+\RequirePackage[outputdir=.texpadtmp,cache]{minted} % Use pygments for source code highlighting
 
 %% Setup document
 \pagestyle{headandfoot}
@@ -88,6 +89,7 @@
     basicstyle=\footnotesize\ttfamily,
     breaklines=true
 }
+\setminted{autogobble,tabsize=4,fontsize=\footnotesize}
 \graphicspath{ {./img/} }
 \date{\today}
 
