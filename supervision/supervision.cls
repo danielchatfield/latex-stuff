@@ -71,7 +71,6 @@
 \RequirePackage{xcolor}
 \RequirePackage{parskip} % Set spacing between paragraphs
 \RequirePackage{titling}
-\RequirePackage{mathtools}
 \RequirePackage{amssymb}
 \RequirePackage{gensymb}
 \RequirePackage{hyperref}
