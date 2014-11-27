@@ -16,12 +16,10 @@ work.
  - Intelligent default title
  - Pretty syntax source code highlighting
 
-### Options
- - **hidesolutions** - Hides the solutions from the compiled PDF
 ### Package Options
  - **HideSolutions** - Hides the solutions from the compiled PDF
 
-### Commands
+### Macros
 
 #### `\SetQuestionNumber{3}`
 
