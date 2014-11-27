@@ -82,9 +82,9 @@
 \RequirePackage{listings} % Legacy source code
 \RequirePackage{courier}
 \iftoggle{NewMint}{
-    \RequirePackage[outputdir=.texpadtmp,cache]{minted}
+    \RequirePackage[outputdir=.texpadtmp]{minted}
 }{
-    \RequirePackage[cache]{minted}
+    \RequirePackage{minted}
 }
 
 %% Setup document
