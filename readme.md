@@ -2,6 +2,10 @@
 
 This repo contains some of my latex stuff.
 
+## Installation
+
+Different depending on distribution. You can just put the `.cls` file next to your source file for simplicity.
+
 ## Supervision Document Class
 
 This is the document class I use for my supervision work, it is an extension of
@@ -18,6 +22,7 @@ work.
 
 ### Package Options
  - **HideSolutions** - Hides the solutions from the compiled PDF
+ - **NewMint** - Indicates that the system has version 2 of minted (which is required for some IDE support).
 
 ### Macros
 

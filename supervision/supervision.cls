@@ -6,6 +6,7 @@
                           % the top as we use several commands
 
 \newtoggle{ShowSolutions}
+\newtoggle{NewMint}
 
 \newtoggle{InQuestions}
 \newtoggle{InParts}
@@ -19,6 +20,7 @@
 
 %% By default show solutions
 \toggletrue{ShowSolutions}
+%% Use old mint version by default
 
 %% Keep track of which environments we are in (used by setnumber to determine
 %% which counter to set)
@@ -28,6 +30,9 @@
 
 
 %% Our custom options
+\DeclareOption{NewMint}{
+    \toggletrue{NewMint}
+}
 \DeclareOption{HideSolutions}{
     \togglefalse{ShowSolutions}
 }
@@ -76,7 +81,11 @@
 \RequirePackage{hyperref}
 \RequirePackage{listings} % Legacy source code
 \RequirePackage{courier}
-\RequirePackage[outputdir=.texpadtmp,cache]{minted} % Use pygments for source code highlighting
+\iftoggle{NewMint}{
+    \RequirePackage[outputdir=.texpadtmp,cache]{minted}
+}{
+    \RequirePackage[cache]{minted}
+}
 
 %% Setup document
 \pagestyle{headandfoot}
