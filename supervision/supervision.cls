@@ -28,11 +28,11 @@
 
 
 %% Our custom options
-\DeclareOption{hide_solutions}{
+\DeclareOption{HideSolutions}{
     \togglefalse{ShowSolutions}
 }
 \DeclareOption{answers}{
-    \ClassWarning{supervision}{Ignoring option 'answers', use `hide_solutions`
+    \ClassWarning{supervision}{Ignoring option 'answers', use `HideSolutions`
     instead}
 }
 

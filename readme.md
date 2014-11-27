@@ -17,6 +17,8 @@ work.
 
 ### Options
  - **hidesolutions** - Hides the solutions from the compiled PDF
+### Package Options
+ - **HideSolutions** - Hides the solutions from the compiled PDF
 
 ### Commands
 
