@@ -157,7 +157,7 @@
         \title{\@Topics}
     } {
         \iftoggle{SupervisionSet} {
-            \title{\@Course \ Supervision \@Supervision}
+            \title{\@Course: \ Supervision \@Supervision}
         }{
             \title{\@Course}
         }
