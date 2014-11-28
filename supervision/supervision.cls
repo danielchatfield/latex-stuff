@@ -22,7 +22,7 @@
 \toggletrue{ShowSolutions}
 %% Use old mint version by default
 
-%% Keep track of which environments we are in (used by setnumber to determine
+%% Keep track of which environments we are in (used by SetQuestionNumber to determine
 %% which counter to set)
 \AtBeginEnvironment{questions}{\toggletrue{InQuestions}}
 \AtBeginEnvironment{parts}{\toggletrue{InParts}}
