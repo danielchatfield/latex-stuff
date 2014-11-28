@@ -90,10 +90,8 @@
 
 %% Setup document
 \pagestyle{headandfoot}
-\runningheader{\theauthor}{\Course \ Supervision \Supervision}{\thedate}
-\firstpageheader{}{\Course}{}
-\firstpagefooter{}{\thepage}{}
-\runningfooter{}{\thepage}{}
+\runningheader{\theauthor}{\Course \ supervision \Supervision}{\thedate}
+\footer{}{Page \thepage}{}
 \marksnotpoints
 \bracketedpoints
 \pointsdroppedatright
@@ -180,6 +178,7 @@
     }
 
     \maketitle
+    \thispagestyle{headandfoot}
 }
 
 
