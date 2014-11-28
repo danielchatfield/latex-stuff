@@ -41,7 +41,7 @@
     instead}
 }
 
-%% Packade options
+%% Package options
 \DeclareOption{sansserif}{
     \PassOptionsToPackage{\CurrentOption}{paxcommands}
 }
