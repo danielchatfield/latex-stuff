@@ -81,6 +81,7 @@
 \RequirePackage{hyperref}
 \RequirePackage{listings} % Legacy source code
 \RequirePackage{courier}
+\RequirePackage[load=abbr]{siunitx}
 \iftoggle{NewMint}{
     \RequirePackage[outputdir=.texpadtmp]{minted}
 }{
@@ -93,17 +94,23 @@
 \firstpageheader{}{\Course}{}
 \firstpagefooter{}{\thepage}{}
 \runningfooter{}{\thepage}{}
+\marksnotpoints
+\bracketedpoints
+\pointsdroppedatright
+\pointsinrightmargin
 % Use Courier for source code listings
 \lstset{
     basicstyle=\footnotesize\ttfamily,
     breaklines=true
 }
 \setminted{autogobble,tabsize=4,fontsize=\footnotesize}
+% Change range format from "1.2GHz to 1.3GHz" to "1.2-1.3GHz"
+\sisetup{range-phrase=--,range-units=single}
 \graphicspath{ {./img/} }
 \date{\today}
 
 % Remove 'solution' from solution box
-\renewcommand{\solutiontitle}{\noindent\textbf{Answer:}\par\noindent}
+\renewcommand{\solutiontitle}{\noindent}
 
 
 %% Command to set question

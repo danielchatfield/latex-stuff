@@ -4,7 +4,7 @@ This repo contains some of my latex stuff.
 
 ## Installation
 
-Different depending on distribution. You can just put the `.cls` file next to your source file for simplicity.
+Different depending on distribution. You can just put the `.cls` file next to your source file for simplicity. You will need `Pygments` installed for syntax highlighting and the document compiled with `--shell-escape`.
 
 ## Supervision Document Class
 
@@ -19,6 +19,7 @@ work.
  - Sensible header
  - Intelligent default title
  - Pretty syntax source code highlighting
+ - Support for SI units e.g. (`\SI{2.4}{\GHz}`)
 
 ### Package Options
  - **HideSolutions** - Hides the solutions from the compiled PDF
