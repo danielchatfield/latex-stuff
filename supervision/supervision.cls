@@ -6,7 +6,6 @@
                           % the top as we use several commands
 
 \newtoggle{ShowSolutions}
-\newtoggle{NewMint}
 
 \newtoggle{InQuestions}
 \newtoggle{InParts}
@@ -30,9 +29,6 @@
 
 
 %% Our custom options
-\DeclareOption{NewMint}{
-    \toggletrue{NewMint}
-}
 \DeclareOption{HideSolutions}{
     \togglefalse{ShowSolutions}
 }
@@ -82,11 +78,6 @@
 \RequirePackage{listings} % Legacy source code
 \RequirePackage{courier}
 \RequirePackage[load=abbr]{siunitx}
-\iftoggle{NewMint}{
-    \RequirePackage[outputdir=.texpadtmp]{minted}
-}{
-    \RequirePackage{minted}
-}
 
 %% Setup document
 \pagestyle{headandfoot}
@@ -101,7 +92,6 @@
     basicstyle=\footnotesize\ttfamily,
     breaklines=true
 }
-\setminted{autogobble,tabsize=4,fontsize=\footnotesize}
 % Change range format from "1.2GHz to 1.3GHz" to "1.2-1.3GHz"
 \sisetup{range-phrase=--,range-units=single}
 \graphicspath{ {./img/} }
