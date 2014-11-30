@@ -74,6 +74,7 @@
 \RequirePackage{titling}
 \RequirePackage{amssymb}
 \RequirePackage{gensymb}
+\PassOptionsToPackage{hyphens}{url}
 \RequirePackage{hyperref}
 \RequirePackage{listings} % Legacy source code
 \RequirePackage{courier}
@@ -99,6 +100,8 @@
 
 % Remove 'solution' from solution box
 \renewcommand{\solutiontitle}{\noindent}
+
+
 
 
 %% Command to set question
