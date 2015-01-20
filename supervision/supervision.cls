@@ -76,7 +76,8 @@
 \RequirePackage{gensymb}
 \PassOptionsToPackage{hyphens}{url}
 \RequirePackage{hyperref}
-\RequirePackage{listings} % Legacy source code
+\RequirePackage{listings}
+\RequirePackage{lstautogobble}
 \RequirePackage{courier}
 \RequirePackage[load=abbr]{siunitx}
 
@@ -93,6 +94,63 @@
     basicstyle=\footnotesize\ttfamily,
     breaklines=true
 }
+\lstloadlanguages{C}
+\lstloadlanguages{python}
+\lstloadlanguages{ml}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{grey}{rgb}{0.5,0.5,0.5}
+\definecolor{pink}{rgb}{205,0,205}
+\definecolor{bkground}{rgb}{0.99,0.99,0.99}
+
+\lstset{literate=%
+   *{0}{{{\color{dkgreen}0}}}1
+    {1}{{{\color{dkgreen}1}}}1
+    {2}{{{\color{dkgreen}2}}}1
+    {3}{{{\color{dkgreen}3}}}1
+    {4}{{{\color{dkgreen}4}}}1
+    {5}{{{\color{dkgreen}5}}}1
+    {6}{{{\color{dkgreen}6}}}1
+    {7}{{{\color{dkgreen}7}}}1
+    {8}{{{\color{dkgreen}8}}}1
+    {9}{{{\color{dkgreen}9}}}1
+    {.0}{{{\color{dkgreen}.0}}}2
+    {.1}{{{\color{dkgreen}.1}}}2
+    {.2}{{{\color{dkgreen}.2}}}2
+    {.3}{{{\color{dkgreen}.3}}}2
+    {.4}{{{\color{dkgreen}.4}}}2
+    {.5}{{{\color{dkgreen}.5}}}2
+    {.6}{{{\color{dkgreen}.6}}}2
+    {.7}{{{\color{dkgreen}.7}}}2
+    {.8}{{{\color{dkgreen}.8}}}2
+    {.9}{{{\color{dkgreen}.9}}}2
+    {~} {$\sim$}{1}
+}
+
+\lstdefinestyle{mystyle}{%
+    basicstyle=\scriptsize\ttfamily,
+    keywordstyle=\bf\color{blue}\ttfamily,
+    stringstyle=\color{orange}\ttfamily,
+    commentstyle=\color{red}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#},
+    showspaces=false,
+    numberstyle=\tiny\color{grey},
+    tabsize=4,
+    breaklines
+}
+
+\lstnewenvironment{code}[2][] {
+    \lstset{language=#2,
+        style=mystyle,
+        autogobble,
+        #1
+    }
+}{}
+
+\newcommand{\codefile}[2]{
+    \lstinputlisting[language=#1,style=mystyle]{#2}
+}
+
 % Change range format from "1.2GHz to 1.3GHz" to "1.2-1.3GHz"
 \sisetup{range-phrase=--,range-units=single}
 \graphicspath{ {./img/} }
@@ -100,8 +158,6 @@
 
 % Remove 'solution' from solution box
 \renewcommand{\solutiontitle}{\noindent}
-
-
 
 
 %% Command to set question
