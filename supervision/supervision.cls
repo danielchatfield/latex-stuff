@@ -73,6 +73,7 @@
 \RequirePackage{parskip} % Set spacing between paragraphs
 \RequirePackage{titling}
 \RequirePackage{amssymb}
+\RequirePackage{amsmath}
 \RequirePackage{gensymb}
 \PassOptionsToPackage{hyphens}{url}
 \RequirePackage{hyperref}
