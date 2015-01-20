@@ -147,7 +147,7 @@
     }
 }{}
 
-\newcommand{\codefile}[2]{
+\newcommand{\codefile}[2][python]{
     \lstinputlisting[language=#1,style=mystyle]{#2}
 }
 
