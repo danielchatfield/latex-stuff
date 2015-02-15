@@ -21,8 +21,8 @@
 \toggletrue{ShowSolutions}
 %% Use old mint version by default
 
-%% Keep track of which environments we are in (used by SetQuestionNumber to determine
-%% which counter to set)
+%% Keep track of which environments we are in (used by SetQuestionNumber to
+%% determine which counter to set)
 \AtBeginEnvironment{questions}{\toggletrue{InQuestions}}
 \AtBeginEnvironment{parts}{\toggletrue{InParts}}
 \AtBeginEnvironment{subparts}{\toggletrue{InSubParts}}
@@ -176,7 +176,7 @@
                 \setcounter{question}{#1}
                 \addtocounter{question}{-1}
             } {
-                \ClassError{supervision}{Cannot use '\\setquestionno' outside questions environment}
+                \ClassError{supervision}{Cannot use '\\setquestionnumber' outside questions environment}
             }
         }
     }
