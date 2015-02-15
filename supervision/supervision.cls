@@ -81,6 +81,8 @@
 \RequirePackage{lstautogobble}
 \RequirePackage{courier}
 \RequirePackage[load=abbr]{siunitx}
+\RequirePackage[sc]{mathpazo}
+\RequirePackage[T1]{fontenc}
 
 %% Setup document
 \pagestyle{headandfoot}
@@ -90,6 +92,7 @@
 \bracketedpoints
 \pointsdroppedatright
 \pointsinrightmargin
+\linespread{1.05}         % Palatino needs more leading (space between lines)
 % Use Courier for source code listings
 \lstset{
     basicstyle=\footnotesize\ttfamily,
