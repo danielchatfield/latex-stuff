@@ -122,6 +122,7 @@
     \lstset{language=#2,
         style=mystyle,
         autogobble,
+        escapechar=§,
         #1
     }
 }{}
