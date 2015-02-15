@@ -109,7 +109,7 @@
 \lstdefinestyle{mystyle}{%
     basicstyle=\scriptsize\ttfamily,
     keywordstyle=\bf\color{blue}\ttfamily,
-    stringstyle=\color{orange}\ttfamily,
+    stringstyle=\color{orange!50!brown}\ttfamily,
     commentstyle=\color{red}\ttfamily,
     morecomment=[l][\color{magenta}]{\#},
     showspaces=false,
