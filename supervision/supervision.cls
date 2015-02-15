@@ -112,7 +112,7 @@
     stringstyle=\color{orange!50!brown}\ttfamily,
     commentstyle=\color{red}\ttfamily,
     morecomment=[l][\color{magenta}]{\#},
-    showspaces=false,
+    showstringspaces=false,
     numberstyle=\tiny\color{grey},
     tabsize=4,
     breaklines
